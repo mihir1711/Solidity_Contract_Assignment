@@ -3,6 +3,9 @@ pragma solidity ^0.5.0;
 // lvl 1: equal split
 contract AssociateProfitSplitter {
     // @TODO: Create three payable addresses representing `employee_one`, `employee_two` and `employee_three`.
+    address payable employee_one;
+    address payable employee_two;
+    address payable employee_three;
 
     constructor(address payable _one, address payable _two, address payable _three) public {
         employee_one = _one;
